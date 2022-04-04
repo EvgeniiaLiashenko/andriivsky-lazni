@@ -1,0 +1,164 @@
+                @media(max-width: 1200px) {
+                    .benefits {
+                        &__inner {
+                            display: block;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        &__inner-img {
+                            width: 742px;
+                            height: 452px;
+                            margin: 0 auto 40px;
+                        }
+                    }
+                    .service {
+                        &__inner-img {
+                            display: none;
+                        }
+                    }
+                }
+                
+                @media(max-width: 992px) {
+                    .header__burger {
+                        position: relative;
+                        display: block;
+                        width: 30px;
+                        height: 20px;
+                        z-index: 3;
+                        & span {
+                            position: absolute;
+                            background-color: #fff;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            top: 9px;
+                            transition: 0.5s ease-in-out;
+                        }
+                        &::before,
+                        &::after {
+                            content: "";
+                            background-color: #fff;
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            left: 0;
+                            transition: 0.5s ease-in-out;
+                        }
+                        &::before {
+                            top: 0;
+                        }
+                        &::after {
+                            bottom: 0;
+                        }
+                        &.active::before {
+                            transform: rotate(45deg);
+                            top: 9px;
+                        }
+                        &.active::after {
+                            transform: rotate(-45deg);
+                            bottom: 9px;
+                        }
+                        &.active span {
+                            transform: scale(0);
+                        }
+                    }
+                    .menu {
+                        position: fixed;
+                        top: 0;
+                        left: -100%;
+                        height: 100%;
+                        padding: 150px 0 0 0;
+                        transition: 0.5s ease-in-out;
+                        z-index: 5;
+                        &__list {
+                            background-color: #7E634D;
+                            display: block;
+                            padding: 100px;
+                        }
+                        &__list-item:not(:last-child) {
+                            padding-bottom: 30px;
+                        }
+                        &__list-item+.menu__list-item {
+                            padding-left: 0;
+                        }
+                        &.active {
+                            left: 0;
+                        }
+                    }
+                    .logo {
+                        z-index: 3;
+                    }
+                    .top-presentation {
+                        &__inner {
+                            display: block;
+                        }
+                        &__inner-title {
+                            font-size: 60px;
+                            line-height: 85px;
+                        }
+                    }
+                }
+                
+                @media(max-width: 620px) {
+                    .title {
+                        font-size: 57px;
+                        line-height: 71px;
+                    }
+                    .top-presentation {
+                        &__inner-title {
+                            font-size: 48px;
+                            line-height: 69px;
+                        }
+                        &__inner-content {
+                            font-size: 23px;
+                            line-height: 28px;
+                        }
+                        &__inner-text {
+                            font-size: 26px;
+                            line-height: 38px;
+                        }
+                    }
+                    .benefits {
+                        &__inner-img {
+                            width: 542px;
+                            height: 364px;
+                        }
+                    }
+                }
+                
+                @media(max-width: 480px) {
+                    .gallery {
+                        padding: 10px 0 10px;
+                    }
+                    .title {
+                        font-size: 30px;
+                        line-height: 50px;
+                    }
+                    .slider-inner__item-img {
+                        padding: 0px;
+                        height: 320px
+                    }
+                    .slick-dots {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 0;
+                        margin-top: 20px;
+                        button {
+                            width: 10px;
+                            height: 10px;
+                            background-color: #C4C4C4;
+                            border-radius: 50%;
+                            border: none;
+                        }
+                        li {
+                            margin-right: 10px;
+                        }
+                        .slick-active {
+                            button {
+                                background-color: #443535;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }

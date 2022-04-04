@@ -1,0 +1,248 @@
+          @import 'vars';
+          @import 'fonts';
+          @import 'reset';
+          @import 'libs';
+          @import 'global';
+          .header {
+              padding: 10px 0;
+              background-color: #8F97A6;
+              position: fixed;
+              top: 0;
+              right: 0;
+              left: 0;
+              z-index: 10;
+              &__inner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+              }
+          }
+          
+          .menu {
+              &__list {
+                  display: flex;
+              }
+              &__list-item {
+                  color: $accent;
+              }
+              &__list-item+.menu__list-item {
+                  padding-left: 71px;
+              }
+              &__list-link:hover {
+                  border-bottom: 2px solid #fff;
+              }
+          }
+          
+          .footer {
+              padding: 53px 0;
+              background-color: #8F97A6;
+              &-inner {
+                  display: flex;
+                  justify-content: center;
+              }
+          }
+          
+          .top-presentation {
+              background-image: url('../images/top-bg.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center center;
+              height: 100vh;
+              margin-top: 109px;
+              &__inner {
+                  display: flex;
+                  justify-content: space-between;
+              }
+              &__inner-title {
+                  max-width: 670px;
+                  font-weight: 700;
+                  font-size: 72px;
+                  line-height: 96px;
+                  color: #fff;
+                  @extend %SegoeUI-Bold-700;
+                  margin: 45px 0 10px 0;
+              }
+              &__inner-shedule {
+                  margin-bottom: 30px;
+              }
+              &__inner-text,
+              &__inner-price {
+                  color: #fff;
+                  font-weight: 700;
+                  font-size: 36px;
+                  line-height: 48px;
+                  @extend %SegoeUI-Bold-700;
+              }
+              &__inner-text span,
+              &__inner-price span {
+                  font-weight: 400;
+                  font-size: 24px;
+                  line-height: 32px;
+              }
+              &__inner-price {
+                  display: flex;
+                  flex-direction: column;
+              }
+              &__inner-contact {
+                  color: #fff;
+                  font-size: 30px;
+                  line-height: 45px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  margin-top: 66px;
+              }
+              &__inner-phone {
+                  margin-bottom: 20px;
+                  &:hover {
+                      color: #2352DE;
+                  }
+              }
+              &__inner-map {
+                  padding-bottom: 15px;
+                  border-bottom: 1px solid #fff;
+                  &:hover {
+                      color: #2352DE;
+                  }
+              }
+          }
+          
+          .benefits {
+              padding: 30px 3px 30px;
+              &__title {
+                  text-align: center;
+              }
+              &__inner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+              }
+              &__inner-img {
+                  width: 742px;
+                  height: 452px;
+                  margin-right: 30px;
+              }
+              &__inner-item {
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                  color: #2F2D2D;
+                  margin-bottom: 50px;
+                  padding-left: 50px;
+                  position: relative;
+                  &::before {
+                      content: "";
+                      position: absolute;
+                      width: 35px;
+                      height: 35px;
+                      background-color: #7E634D;
+                      border-radius: 50%;
+                      top: 0;
+                      left: 0;
+                  }
+              }
+          }
+          
+          .service {
+              padding: 30px 0 30px;
+              &__title {
+                  text-align: center;
+              }
+              &__inner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 50px;
+              }
+              &__inner-item {
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                  color: #2F2D2D;
+                  margin-bottom: 50px;
+                  padding-left: 50px;
+                  position: relative;
+                  &::before {
+                      content: "";
+                      position: absolute;
+                      width: 35px;
+                      height: 35px;
+                      background-color: #7E634D;
+                      border-radius: 50%;
+                      top: 0;
+                      left: 0;
+                  }
+              }
+              &__colouritem {
+                  color: #B91212;
+              }
+          }
+          
+          .gallery {
+              padding: 50px 0 50px;
+              background-color: #7E634D;
+              &__title {
+                  color: #171616;
+                  text-align: center;
+              }
+          }
+          
+          .slider-inner__item-img {
+              margin-left: auto;
+              margin-right: auto;
+              padding: 10px;
+              height: 500px;
+          }
+          
+          .slick-dots {
+              display: flex;
+              justify-content: center;
+              font-size: 0;
+              margin-top: 50px;
+              button {
+                  width: 21px;
+                  height: 21px;
+                  background-color: #C4C4C4;
+                  border-radius: 50%;
+                  border: none;
+              }
+              li {
+                  margin-right: 30px;
+              }
+          }
+          
+          .slick-active {
+              button {
+                  background-color: #443535;
+                  width: 35px;
+                  height: 35px;
+              }
+          }
+          
+          .contact {
+              padding: 55px 0 55px;
+              &__title {
+                  text-align: center;
+                  margin-bottom: 80px;
+              }
+              &__inner {
+                  text-align: center;
+                  &-phone,
+                  &-adress {
+                      font-weight: 600;
+                      font-size: 24px;
+                      line-height: 32px;
+                      margin-bottom: 30px;
+                      &-phone {
+                          display: block;
+                          padding-bottom: 10px;
+                      }
+                  }
+              }
+              .contact__inner-inst {
+                  display: flex;
+                  justify-content: center;
+              }
+          }
+          
+          @import 'media';

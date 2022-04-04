@@ -1,0 +1,28 @@
+{
+    "name": "start__gulp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Evgenia Liashenko",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.27.8",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
+        "jquery": "npm:jQuery@^1.7.4",
+        "jQuery": "^1.7.4",
+        "sass": "^1.49.9"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.1",
+        "slick-carousel": "^1.8.1"
+    }
+}
